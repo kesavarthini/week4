@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.stereotype.Service;
+
+@SpringBootApplication
+@EnableEurekaClient
+public class MsMyServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MsMyServiceApplication.class, args);
+	}
+	public String demoMethod()
+	{
+		return "<h1>This is from MY SERVICE</h1>"
+	}
+
+}

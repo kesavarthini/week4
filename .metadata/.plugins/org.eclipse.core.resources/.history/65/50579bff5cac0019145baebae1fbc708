@@ -1,0 +1,23 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller 
+public class AnotherController {
+
+
+
+     @RequestMapping("/")
+//     @ResponseBody
+	  public String Greet()
+	  {
+	
+		  return "login";
+	  }
+     
+     RequestMapping("/verify")
+     public String verifyMethod()
+     {
+    	 return "welcome";
+     }
+}
